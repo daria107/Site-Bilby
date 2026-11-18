@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Билби — Пустынный Герой | Интерактивный Фан-Сайт</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ПРЕЛОАДЕР -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-sun"></div>
+    <div class="preloader-text">БИЛБИ</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+
+<!-- КУРСОР -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- НАВИГАЦИЯ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-icon">🦊</span>
+    <span class="logo-text">БИЛБИ</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Главная</a></li>
+    <li><a href="#story">История</a></li>
+    <li><a href="#characters">Персонажи</a></li>
+    <li><a href="#watch">Смотреть</a></li>
+    <li><a href="#interactive">Игры</a></li>
+    <li><a href="#gallery">Галерея</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-sun"></div>
+    <div class="hero-stars" id="heroStars"></div>
+    <div class="hero-dune dune-a"></div>
+    <div class="hero-dune dune-b"></div>
+    <div class="hero-dune dune-c"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">DreamWorks Animation • 2018</div>
+    <h1 class="hero-title">
+      <span class="title-line">МАЛЕНЬКИЙ</span>
+      <span class="title-line highlight">ГЕРОЙ</span>
+      <span class="title-line">ПУСТЫНИ</span>
+    </h1>
+    <p class="hero-desc">Трогательная история о билби, который доказал: настоящая сила — не в размере, а в сердце.</p>
+    <div class="hero-actions">
+      <a href="#watch" class="btn btn-primary">▶ Смотреть мультфильм</a>
+      <a href="#interactive" class="btn btn-outline">🎮 Играть</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">минут</span></div>
+      <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">награда</span></div>
+      <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% эмоций</span></div>
+    </div>
+  </div>
+  <div class="hero-bilby" id="heroBilby">
+    <svg viewBox="0 0 200 220" class="bilby-svg">
+      <defs>
+        <radialGradient id="furGrad" cx="50%" cy="40%">
+          <stop offset="0%" stop-color="#C98B5E"/>
+          <stop offset="100%" stop-color="#7A4A2A"/>
+        </radialGradient>
+      </defs>
+      <ellipse cx="70" cy="45" rx="16" ry="48" fill="#3D2817" transform="rotate(-18 70 45)"/>
+      <ellipse cx="70" cy="45" rx="9" ry="38" fill="#E87A3E" transform="rotate(-18 70 45)"/>
+      <ellipse cx="130" cy="45" rx="16" ry="48" fill="#3D2817" transform="rotate(18 130 45)"/>
+      <ellipse cx="130" cy="45" rx="9" ry="38" fill="#E87A3E" transform="rotate(18 130 45)"/>
+      <ellipse cx="100" cy="140" rx="58" ry="55" fill="url(#furGrad)"/>
+      <ellipse cx="100" cy="145" rx="46" ry="42" fill="#A0694A"/>
+      <circle cx="100" cy="95" r="42" fill="url(#furGrad)"/>
+      <ellipse cx="100" cy="110" rx="22" ry="16" fill="#D4A574"/>
+      <ellipse cx="100" cy="102" rx="6" ry="4.5" fill="#1a1a1a"/>
+      <circle cx="84" cy="88" r="6" fill="#1a1a1a"/>
+      <circle cx="116" cy="88" r="6" fill="#1a1a1a"/>
+      <circle cx="86" cy="86" r="2" fill="white"/>
+      <circle cx="118" cy="86" r="2" fill="white"/>
+      <ellipse cx="75" cy="185" rx="11" ry="16" fill="#3D2817"/>
+      <ellipse cx="125" cy="185" rx="11" ry="16" fill="#3D2817"/>
+    </svg>
+    <div class="bilby-shadow"></div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="mouse"><div class="wheel"></div></div>
+    <span>Листай вниз</span>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">01 — История</span>
+      <h2 class="section-title">Сказка, рождённая в песках</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="story-grid">
+      <div class="story-text">
+        <p class="story-lead">В бескрайней австралийской пустыне, где солнце выжигает всё живое, живёт крошечный билби. Он боится почти всего — тени, шороха, хищников.</p>
+        <p>Но однажды его жизнь меняется навсегда: он находит беззащитного птенца, выпавшего из гнезда. И перед билби встаёт выбор — спрятаться или стать героем.</p>
+        <p>Этот мультфильм — не просто история о животных. Это притча о том, что <strong>смелость не означает отсутствие страха</strong>. Смелость — это действовать, несмотря на страх.</p>
+        <div class="story-quote">
+          <span class="quote-mark">"</span>
+          Даже самое маленькое сердце способно на самый большой поступок.
+        </div>
+      </div>
+      <div class="story-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Одиночество</h4>
+            <p>Билби прячется от всего мира в своей норе</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Встреча</h4>
+            <p>Он находит птенца, которому нужна помощь</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Испытание</h4>
+            <p>Пустыня бросает ему вызов — хищники и опасности</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Подвиг</h4>
+            <p>Билби преодолевает страх и спасает птенца</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHARACTERS -->
+<section class="characters" id="characters">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">02 — Персонажи</span>
+      <h2 class="section-title">Обитатели пустыни</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="characters-grid">
+      <div class="char-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #C98B5E, #7A4A2A);">🦊</div>
+        <h3>Билби</h3>
+        <p class="char-role">Главный герой</p>
+        <p class="char-desc">Маленький сумчатый заяц, который боится собственной тени, но находит в себе мужество для великого поступка.</p>
+        <div class="char-traits">
+          <span>Смелый</span><span>Добрый</span><span>Маленький</span>
+        </div>
+      </div>
+      <div class="char-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #FFE4A1, #E87A3E);">🐣</div>
+        <h3>Птенец</h3>
+        <p class="char-role">Тот, кого спасают</p>
+        <p class="char-desc">Беззащитный малыш, который стал для билби смыслом и причиной победить собственный страх.</p>
+        <div class="char-traits">
+          <span>Ранимый</span><span>Доверчивый</span><span>Тёплый</span>
+        </div>
+      </div>
+      <div class="char-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #4A4A4A, #1a1a1a);">🦅</div>
+        <h3>Хищники</h3>
+        <p class="char-role">Антагонисты</p>
+        <p class="char-desc">Опасные обитатели пустыни, которые испытывают смелость билби на прочность. Символ суровой реальности.</p>
+        <div class="char-traits">
+          <span>Опасные</span><span>Быстрые</span><span>Хитрые</span>
+        </div>
+      </div>
+      <div class="char-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #F4A460, #FF6B35);">🌵</div>
+        <h3>Пустыня</h3>
+        <p class="char-role">Место действия</p>
+        <p class="char-desc">Не просто декорация, а живой персонаж — жестокая и прекрасная, она учит героя быть сильным.</p>
+        <div class="char-traits">
+          <span>Жаркая</span><span>Красивая</span><span>Суровая</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WATCH -->
+<section class="watch" id="watch">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-tag">03 — Смотреть</span>
+      <h2 class="section-title">Смотри прямо здесь</h2>
+      <div class="section-line center"></div>
+    </div>
+    
+    <!-- Блок с видео по центру -->
+    <div class="video-block" style="max-width: 900px; margin: 0 auto;">
+      <div class="video-frame" id="videoFrame">
+        
+        <!-- ========================================== -->
+        <!-- ВСТАВЬ СВОЮ ССЫЛКУ В АТРИБУТ src НИЖЕ       -->
+        <!-- ========================================== -->
+        <video id="mainVideo" controls preload="metadata" poster="">
+          <source src="5018784631527.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+        
+        <!-- Оверлей с кнопкой Play (исчезает при клике) -->
+        <div class="video-overlay" id="videoOverlay">
+          <div class="play-btn">
+            <div class="play-triangle"></div>
+          </div>
+          <h3>Билби (2018)</h3>
+          <p>Нажми, чтобы начать просмотр</p>
+          <span class="video-duration">⏱ 8 минут</span>
+        </div>
+      </div>
+      <p class="video-caption">Короткометражный фильм • DreamWorks Animation • 2018</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- INTERACTIVE GAMES -->
+<section class="interactive" id="interactive">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-tag">04 — Игры</span>
+      <h2 class="section-title">Стань частью пустыни</h2>
+      <div class="section-line center"></div>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-game="catch">⭐ Лови звёзды</button>
+      <button class="tab" data-game="memory">🧠 Мемори</button>
+      <button class="tab" data-game="quiz">❓ Викторина</button>
+    </div>
+
+    <!-- CATCH GAME -->
+    <div class="game-panel active" id="game-catch">
+      <div class="game-header">
+        <p>Двигай Билби мышкой или пальцем. Собирай звёзды ⭐, избегай хищников 🦅</p>
+      </div>
+      <div class="game-stats">
+        <div class="gstat"><span>Счёт</span><strong id="catchScore">0</strong></div>
+        <div class="gstat"><span>Рекорд</span><strong id="catchBest">0</strong></div>
+        <div class="gstat"><span>Время</span><strong id="catchTime">30</strong></div>
+      </div>
+      <div class="game-arena" id="catchArena">
+        <div class="player" id="catchPlayer">🦊</div>
+      </div>
+      <button class="btn btn-primary" onclick="startCatch()">▶ НАЧАТЬ</button>
+    </div>
+
+    <!-- MEMORY GAME -->
+    <div class="game-panel" id="game-memory">
+      <div class="game-header">
+        <p>Найди все пары карточек с персонажами пустыни</p>
+      </div>
+      <div class="game-stats">
+        <div class="gstat"><span>Ходы</span><strong id="memMoves">0</strong></div>
+        <div class="gstat"><span>Пары</span><strong id="memPairs">0/6</strong></div>
+        <div class="gstat"><span>Время</span><strong id="memTime">0</strong></div>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+      <button class="btn btn-primary" onclick="startMemory()">🔄 НОВАЯ ИГРА</button>
+    </div>
+
+    <!-- QUIZ -->
+    <div class="game-panel" id="game-quiz">
+      <div class="game-header">
+        <p>Проверь, насколько хорошо ты знаешь мультфильм</p>
+      </div>
+      <div class="game-stats">
+        <div class="gstat"><span>Вопрос</span><strong id="quizQ">1/5</strong></div>
+        <div class="gstat"><span>Правильно</span><strong id="quizScore">0</strong></div>
+      </div>
+      <div class="quiz-box" id="quizBox">
+        <div class="quiz-question" id="quizQuestion">Нажми «Начать», чтобы проверить себя</div>
+        <div class="quiz-answers" id="quizAnswers"></div>
+        <div class="quiz-result" id="quizResult"></div>
+      </div>
+      <button class="btn btn-primary" onclick="startQuiz()">❓ НАЧАТЬ ВИКТОРИНУ</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">05 — Галерея</span>
+      <h2 class="section-title">Кадры из мультфильма</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="gallery-grid">
+      
+      <!-- КАРТИНКА 1 -->
+      <div class="gallery-item">
+        <img src="https://avatars.mds.yandex.net/i?id=d4d9f8345f5700518aa49c97b5ae02cb32ef2799-5512684-images-thumbs&n=13" alt="Одинокий билби">
+        <div class="gallery-caption">Одинокий билби</div>
+      </div>
+
+      <!-- КАРТИНКА 2 -->
+      <div class="gallery-item">
+        <img src="https://avatars.mds.yandex.net/i?id=dec5baa280b154d2b800bde22f45c1c3ba80a037-8338869-images-thumbs&n=13" alt="Встреча с птенцом">
+        <div class="gallery-caption">Встреча с птенцом</div>
+      </div>
+
+      <!-- КАРТИНКА 3 -->
+      <div class="gallery-item">
+        <img src="https://avatars.mds.yandex.net/i?id=4321d9b1503faca4f988512fe741b11b6d912d51-4922198-images-thumbs&n=13" alt="Ночь под звёздами">
+        <div class="gallery-caption">Опасное озеро</div>
+      </div>
+
+      <!-- КАРТИНКА 4 -->
+      <div class="gallery-item">
+        <img src="https://avatars.mds.yandex.net/i?id=38be0c72df35bc06da178ccb60a862d32235167f-5555978-images-thumbs&n=13" alt="Защита от хищников">
+        <div class="gallery-caption">Защита от хищников</div>
+      </div>
+
+      <!-- КАРТИНКА 5 -->
+      <div class="gallery-item">
+        <img src="https://avatars.mds.yandex.net/i?id=3c54595a20f89992e4f163b05c63ccabe97f63be-8283357-images-thumbs&n=13" alt="Опасные скалы">
+        <div class="gallery-caption">Опасные скалы</div>
+      </div>
+
+      <!-- КАРТИНКА 6 -->
+      <div class="gallery-item">
+        <img src="https://avatars.mds.yandex.net/i?id=c66545bd7cf6df1fb29b19253f6274a994abfd54-10933751-images-thumbs&n=13" alt="Счастливый финал">
+        <div class="gallery-caption">Счастливый финал</div>
+      </div>
+
+    </div>
+    <!-- Надпись внизу удалена -->
+  </div>
+</section>
+
+<!-- FACTS COUNTER -->
+<section class="facts-strip">
+  <div class="container">
+    <div class="facts-row">
+      <div class="fact-item">
+        <div class="fact-emoji">🎬</div>
+        <div class="fact-num" data-count="2018">0</div>
+        <div class="fact-label">год выхода</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-emoji">⏱️</div>
+        <div class="fact-num" data-count="8">0</div>
+        <div class="fact-label">минут истории</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-emoji">🏆</div>
+        <div class="fact-num" data-count="8">0</div>
+        <div class="fact-label">номинаций</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-emoji">❤️</div>
+        <div class="fact-num" data-count="1000000">0</div>
+        <div class="fact-label">сердец покорил</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🦊 БИЛБИ</div>
+        <p>Фан-сайт, посвящённый трогательному мультфильму DreamWorks Animation.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Разделы</h4>
+        <a href="#story">История</a>
+        <a href="#characters">Персонажи</a>
+        <a href="#watch">Смотреть</a>
+        <a href="#interactive">Игры</a>
+      </div>
+      <div class="footer-links facts-links">
+        <h4>Интересные факты</h4>
+        <p style="color: rgba(244,228,193,0.7); font-size: 0.9rem; margin-bottom: 10px;">🦊 Билби — реальное животное, обитающее в Австралии.</p>
+        <p style="color: rgba(244,228,193,0.7); font-size: 0.9rem; margin-bottom: 10px;">🐣 Мультфильм показывали перед сеансами «Маленькой Ноги».</p>
+        <p style="color: rgba(244,228,193,0.7); font-size: 0.9rem;">🏆 Номинант на премию «Энни» за лучшую короткометражку.</p>
+      </div>
+      <div class="footer-quote">
+        <p>«Настоящая сила — не в размере, а в сердце»</p>
+        <span>— Билби</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2018 DreamWorks Animation. Фан-сайт создан с любовью к маленьким героям 💛</p>
+    </div>
+  </div>
+</footer>
+
+<!-- МОДАЛЬНОЕ ОКНО КАРТИНКИ -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
